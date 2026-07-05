@@ -3,6 +3,9 @@ const glimpseImages = import.meta.glob('./assets/glimpse/*.{jpg,jpeg,png,webp,JP
   import: 'default'
 });
 
+import alpineVenueImg from './assets/alpine-venue.jpg';
+import tajFarmsImg from './assets/taj-farms.png';
+
 export const galleryHighlights = Object.values(glimpseImages);
 
 export const portfolioWorks = [
@@ -113,7 +116,7 @@ export const palacesVenues = [
     capacity: "500 - 2000 guests",
     space: "Indoor Halls & Outdoor Lawns",
     description: "Our flagship heritage property blending ancient architecture with modern luxury. Perfect for grand royal weddings.",
-    images: ["https://images.unsplash.com/photo-1582570081608-251025553b47?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1596440409743-348cdfa2b6b0?auto=format&fit=crop&w=800&q=80"]
+    images: [tajFarmsImg]
   },
   {
     id: 2,
@@ -122,6 +125,6 @@ export const palacesVenues = [
     capacity: "upto 300 guests",
     space: "Indoor Hall & Hotel Rooms & Restaurant",
     description: "An exclusive property for kitty parties , small gatherings , personal get-together , safe night stays , good food .",
-    images: ["https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&w=800&q=80"]
+    images: [alpineVenueImg]
   }
 ];

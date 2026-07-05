@@ -101,9 +101,9 @@ const Navbar = () => {
                 {link}
               </button>
             ))}
-            <button className="bg-[var(--color-gold)] text-[var(--color-espresso)] px-6 py-2 rounded-md uppercase tracking-wider text-sm font-semibold hover:bg-yellow-400 transition-colors ornamental-border glow-hover">
+            <a href="https://wa.me/917206881600" target="_blank" rel="noreferrer" className="inline-block bg-[var(--color-gold)] text-[var(--color-espresso)] px-6 py-2 rounded-md uppercase tracking-wider text-sm font-semibold hover:bg-yellow-400 transition-colors ornamental-border glow-hover text-center">
               Enquire Now
-            </button>
+            </a>
           </div>
 
           <div className="lg:hidden flex items-center">
@@ -123,9 +123,9 @@ const Navbar = () => {
                 {link}
               </button>
             ))}
-            <button className="bg-[var(--color-gold)] text-[var(--color-espresso)] mx-auto w-full py-3 mt-4 rounded-md uppercase tracking-wider text-sm font-semibold ornamental-border glow-hover">
+            <a href="https://wa.me/917206881600" target="_blank" rel="noreferrer" className="block text-center bg-[var(--color-gold)] text-[var(--color-espresso)] mx-auto w-full py-3 mt-4 rounded-md uppercase tracking-wider text-sm font-semibold ornamental-border glow-hover hover:bg-yellow-400 transition-colors">
               Enquire Now
-            </button>
+            </a>
           </div>
         </div>
       )}
@@ -153,9 +153,9 @@ const Hero = () => (
         <button className="bg-[var(--color-gold)] text-[var(--color-espresso)] px-8 py-4 rounded font-bold uppercase tracking-widest hover:bg-yellow-400 transition-colors glow-hover">
           View Our Work
         </button>
-        <button className="bg-[var(--color-emerald)] border-2 border-[var(--color-gold)] text-[var(--color-gold)] px-8 py-4 rounded font-bold uppercase tracking-widest hover:bg-[#135A46] transition-colors glow-hover shadow-lg">
+        <a href="https://wa.me/917206881600" target="_blank" rel="noreferrer" className="inline-block text-center bg-[var(--color-emerald)] border-2 border-[var(--color-gold)] text-[var(--color-gold)] px-8 py-4 rounded font-bold uppercase tracking-widest hover:bg-[#135A46] transition-colors glow-hover shadow-lg">
           Book Consultation
-        </button>
+        </a>
       </div>
     </div>
   </section>
@@ -485,9 +485,7 @@ const Venues = () => (
               <span>{venue.space}</span>
             </div>
             <p className="text-lg leading-relaxed text-gray-300 font-light">{venue.description}</p>
-            <button className="border-b-2 border-[var(--color-maroon)] text-[var(--color-cream)] uppercase tracking-widest font-bold pb-1 hover:text-[var(--color-gold)] hover:border-[var(--color-gold)] transition-colors mt-4">
-              Explore Venue
-            </button>
+
           </div>
           
           <div className="w-full lg:w-1/2 relative group">
@@ -563,77 +561,90 @@ const Contact = () => (
   <section id="contact" className="section-padding bg-[var(--color-cream)] relative">
     <SectionHeader eyebrow="Let's Plan Your Day" title="Connect With Us" />
     
-    <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16">
-      <div className="w-full lg:w-5/12 space-y-10">
-        <div className="space-y-6">
-          <h3 className="text-3xl font-serif text-[var(--color-espresso)] font-bold">Reach Out Directly</h3>
-          <p className="text-gray-600">We respond within 24 hours to help you start crafting your dream wedding.</p>
-        </div>
-        
-        <div className="space-y-6">
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-[var(--color-emerald)]/10 flex items-center justify-center rounded-full border border-[var(--color-emerald)]/30"><Phone className="text-[var(--color-maroon)]" /></div>
+    <div className="max-w-4xl mx-auto text-center mb-16 space-y-4 px-4">
+       <h3 className="text-3xl md:text-5xl font-serif text-[var(--color-maroon)] font-bold">Let's Start Planning Your Dream Wedding</h3>
+       <p className="text-lg text-gray-600 font-medium">Reach out anytime — we respond within 24 hours.</p>
+    </div>
+
+    <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16 items-start px-4">
+      {/* Office Info Block (Left Column) */}
+      <div className="w-full lg:w-1/3 space-y-8 bg-white p-8 md:p-10 rounded-xl shadow-lg border border-[var(--color-gold)]/30">
+        <h4 className="text-2xl font-serif text-[var(--color-espresso)] font-bold mb-6 border-b border-[var(--color-gold)]/40 pb-4">Our Details</h4>
+        <div className="space-y-8">
+          <div className="flex items-center gap-5">
+            <div className="w-14 h-14 bg-[var(--color-emerald)]/10 flex items-center justify-center rounded-full border border-[var(--color-emerald)]/30 flex-shrink-0"><Phone className="text-[var(--color-maroon)]" size={24} /></div>
             <div>
               <p className="text-sm text-gray-500 uppercase tracking-wider font-semibold">Phone</p>
               <p className="text-lg font-medium text-[var(--color-espresso)]">+91 7206881600</p>
             </div>
           </div>
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-[var(--color-emerald)]/10 flex items-center justify-center rounded-full border border-[var(--color-emerald)]/30"><Mail className="text-[var(--color-maroon)]" /></div>
+          <div className="flex items-center gap-5">
+            <div className="w-14 h-14 bg-[var(--color-emerald)]/10 flex items-center justify-center rounded-full border border-[var(--color-emerald)]/30 flex-shrink-0"><Mail className="text-[var(--color-maroon)]" size={24} /></div>
             <div>
               <p className="text-sm text-gray-500 uppercase tracking-wider font-semibold">Email</p>
-              <p className="text-lg font-medium text-[var(--color-espresso)]">hello@keshavdecor.com</p>
+              <p className="text-lg font-medium text-[var(--color-espresso)]">anshulgoel1981@gmail.com</p>
             </div>
           </div>
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-[var(--color-gold)]/10 flex items-center justify-center rounded-full"><MapPin className="text-[var(--color-maroon)]" /></div>
+          <div className="flex items-center gap-5">
+            <div className="w-14 h-14 bg-[var(--color-gold)]/20 flex items-center justify-center rounded-full flex-shrink-0"><MapPin className="text-[var(--color-maroon)]" size={24} /></div>
             <div>
               <p className="text-sm text-gray-500 uppercase tracking-wider font-semibold">Head Office</p>
-              <p className="text-lg font-medium text-[var(--color-espresso)]">opp Upall mall yamunagagar , Agarsein chownk yamunagagar</p>
+              <p className="text-base font-medium text-[var(--color-espresso)] leading-tight">Plot No 3 Cooperative House Building Society, opposite Upal Mall, Jagadhri</p>
             </div>
           </div>
-        </div>
-        
-        <div className="w-full h-64 bg-gray-200 mt-8 rounded-lg overflow-hidden border border-gray-300">
-           {/* Placeholder for Maps */}
-           <div className="w-full h-full flex flex-col items-center justify-center text-gray-500 bg-[var(--color-cream)]">
-             <Map size={48} className="mb-2 opacity-30" />
-             <p className="uppercase tracking-widest text-sm font-semibold">Google Maps Embed</p>
-           </div>
+          
+          {/* Socials Placeholder */}
+          <div className="pt-8 border-t border-[var(--color-gold)]/30 flex justify-center gap-6 text-[var(--color-espresso)]">
+             <a href="https://www.instagram.com/keshav_caterersynr?igsh=bmVwZHFvNHFuZWhk" target="_blank" rel="noreferrer" className="bg-[var(--color-gold)]/20 w-12 h-12 flex items-center justify-center rounded-full hover:bg-[var(--color-maroon)] hover:text-white transition shadow-sm border border-[var(--color-gold)]/50">
+               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+             </a>
+             <a href="https://www.facebook.com/people/Keshav-Caterers-Decorators/pfbid0mPYvbKqV6cZYWrMdyBraN36LKVhgXg8aLmszqDCyXkmneQu12TXnYUkNzm6tsAbml/?rdid=vZeXYUC0jI5w8VrW&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1994iNufoM%2F%3Fref%3D1" target="_blank" rel="noreferrer" className="bg-[var(--color-gold)]/20 w-12 h-12 flex items-center justify-center rounded-full hover:bg-[var(--color-maroon)] hover:text-white transition shadow-sm border border-[var(--color-gold)]/50">
+               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+             </a>
+          </div>
         </div>
       </div>
       
-      <div className="w-full lg:w-7/12 bg-[var(--color-cream)] p-8 md:p-12 rounded-xl shadow-lg border border-[var(--color-gold)]/30">
-        <h3 className="text-2xl font-serif font-bold text-[var(--color-espresso)] mb-8">Send an Enquiry</h3>
-        <form className="space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="space-y-2">
-              <label className="text-sm uppercase tracking-wider text-gray-600 font-semibold" htmlFor="name">Full Name</label>
-              <input type="text" id="name" className="w-full bg-white border border-[var(--color-muted-gold)]/50 p-3 rounded focus:outline-none focus:border-[var(--color-maroon)] transition-colors" placeholder="Your Name" />
-            </div>
-            <div className="space-y-2">
-              <label className="text-sm uppercase tracking-wider text-gray-600 font-semibold" htmlFor="phone">Phone Number</label>
-              <input type="tel" id="phone" className="w-full bg-white border border-[var(--color-muted-gold)]/50 p-3 rounded focus:outline-none focus:border-[var(--color-maroon)] transition-colors" placeholder="Your Phone" />
-            </div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="space-y-2">
-              <label className="text-sm uppercase tracking-wider text-gray-600 font-semibold" htmlFor="date">Event Date</label>
-              <input type="date" id="date" className="w-full bg-white border border-[var(--color-muted-gold)]/50 p-3 rounded focus:outline-none focus:border-[var(--color-maroon)] transition-colors text-gray-600" />
-            </div>
-            <div className="space-y-2">
-              <label className="text-sm uppercase tracking-wider text-gray-600 font-semibold" htmlFor="city">Event City</label>
-              <input type="text" id="city" className="w-full bg-white border border-[var(--color-muted-gold)]/50 p-3 rounded focus:outline-none focus:border-[var(--color-maroon)] transition-colors" placeholder="E.g. Jaipur, Udaipur" />
-            </div>
-          </div>
-          <div className="space-y-2">
-            <label className="text-sm uppercase tracking-wider text-gray-600 font-semibold" htmlFor="message">How can we help?</label>
-            <textarea id="message" rows={4} className="w-full bg-white border border-[var(--color-muted-gold)]/50 p-3 rounded focus:outline-none focus:border-[var(--color-maroon)] transition-colors resize-none" placeholder="Tell us about your events, pre-wedding functions, number of guests..."></textarea>
-          </div>
-          <button type="button" className="w-full bg-[var(--color-gold)] text-[var(--color-espresso)] glow-hover font-bold uppercase tracking-widest py-4 rounded hover:bg-yellow-400 transition-colors ornamental-border">
-            Submit Enquiry
-          </button>
-        </form>
+      {/* Right Column: CTA Cards & Map */}
+      <div className="w-full lg:w-2/3 space-y-10">
+         
+         {/* 3 Prominent Action Cards */}
+         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a href="tel:+917206881600" className="flex flex-col items-center text-center p-8 bg-white border border-[var(--color-gold)]/40 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition group">
+                <div className="w-16 h-16 rounded-full bg-[var(--color-cream)] border border-[var(--color-gold)]/50 flex items-center justify-center mb-4 group-hover:bg-[var(--color-gold)]/10 transition">
+                   <Phone size={28} className="text-[var(--color-maroon)]" />
+                </div>
+                <h4 className="text-xl font-bold font-serif text-[var(--color-espresso)] mb-1">Call Now</h4>
+                <p className="text-sm text-gray-500 font-medium">Tap to call us</p>
+            </a>
+
+            <a href="https://wa.me/917206881600" target="_blank" rel="noreferrer" className="flex flex-col items-center text-center p-8 bg-[var(--color-espresso)] border-2 border-[var(--color-gold)] rounded-xl shadow-xl hover:-translate-y-2 transition transform lg:scale-105 group relative overflow-hidden glow-hover">
+                <div className="absolute inset-0 bg-royal-texture opacity-30 pointer-events-none"></div>
+                <div className="w-20 h-20 rounded-full bg-[var(--color-maroon)] border border-[var(--color-gold)] flex items-center justify-center mb-4 group-hover:scale-110 transition relative z-10 shadow-[0_0_15px_rgba(212,175,55,0.4)]">
+                   <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[var(--color-gold)]"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                </div>
+                <h4 className="text-2xl font-bold font-serif text-[var(--color-gold)] mb-1 relative z-10">WhatsApp Us</h4>
+                <p className="text-sm text-[var(--color-cream)]/90 font-medium relative z-10">Instant responses</p>
+            </a>
+
+            <a href="mailto:anshulgoel1981@gmail.com" className="flex flex-col items-center text-center p-8 bg-white border border-[var(--color-gold)]/40 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition group">
+                <div className="w-16 h-16 rounded-full bg-[var(--color-cream)] border border-[var(--color-gold)]/50 flex items-center justify-center mb-4 group-hover:bg-[var(--color-gold)]/10 transition">
+                   <Mail size={28} className="text-[var(--color-maroon)]" />
+                </div>
+                <h4 className="text-xl font-bold font-serif text-[var(--color-espresso)] mb-1">Email Us</h4>
+                <p className="text-sm text-gray-500 font-medium">Send us details</p>
+            </a>
+         </div>
+
+         {/* Map Placeholder */}
+         <div className="w-full h-80 bg-white rounded-xl overflow-hidden border border-[var(--color-gold)]/40 shadow-lg">
+           <div className="w-full h-full flex flex-col items-center justify-center text-gray-500 bg-[var(--color-cream)] relative group">
+             <div className="absolute inset-0 bg-royal-texture opacity-5"></div>
+             <Map size={56} className="mb-4 opacity-30 text-[var(--color-maroon)]" />
+             <p className="uppercase tracking-widest text-sm font-semibold text-[var(--color-maroon)]">Google Maps Embed</p>
+             <p className="text-xs text-gray-400 mt-2 font-medium">Interactive map will load here</p>
+           </div>
+         </div>
       </div>
     </div>
   </section>
@@ -648,10 +659,10 @@ const Footer = () => (
           Pioneers in luxury weddings, blending authentic tradition with impeccable hospitality across India's most breathtaking destinations.
         </p>
         <div className="flex gap-4">
-          <a href="#" className="w-10 h-10 rounded-full border border-[var(--color-gold)] flex items-center justify-center hover:bg-[var(--color-gold)] hover:text-[var(--color-espresso)] transition-colors text-[var(--color-gold)] font-bold text-xs">
+          <a href="https://www.instagram.com/keshav_caterersynr?igsh=bmVwZHFvNHFuZWhk" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full border border-[var(--color-gold)] flex items-center justify-center hover:bg-[var(--color-gold)] hover:text-[var(--color-espresso)] transition-colors text-[var(--color-gold)] font-bold text-xs">
             IG
           </a>
-          <a href="#" className="w-10 h-10 rounded-full border border-[var(--color-gold)] flex items-center justify-center hover:bg-[var(--color-gold)] hover:text-[var(--color-espresso)] transition-colors text-[var(--color-gold)] font-bold text-xs">
+          <a href="https://www.facebook.com/people/Keshav-Caterers-Decorators/pfbid0mPYvbKqV6cZYWrMdyBraN36LKVhgXg8aLmszqDCyXkmneQu12TXnYUkNzm6tsAbml/?rdid=vZeXYUC0jI5w8VrW&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1994iNufoM%2F%3Fref%3D1" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full border border-[var(--color-gold)] flex items-center justify-center hover:bg-[var(--color-gold)] hover:text-[var(--color-espresso)] transition-colors text-[var(--color-gold)] font-bold text-xs">
             FB
           </a>
         </div>
