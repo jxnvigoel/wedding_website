@@ -150,7 +150,7 @@ const Hero = () => (
         Where Your Royal<br />Tale Begins
       </h1>
       <div className="flex flex-col sm:flex-row gap-6 justify-center mt-10">
-        <button className="bg-[var(--color-gold)] text-[var(--color-espresso)] px-8 py-4 rounded font-bold uppercase tracking-widest hover:bg-yellow-400 transition-colors glow-hover">
+        <button onClick={() => document.getElementById('decor')?.scrollIntoView({ behavior: 'smooth' })} className="bg-[var(--color-gold)] text-[var(--color-espresso)] px-8 py-4 rounded font-bold uppercase tracking-widest hover:bg-yellow-400 transition-colors glow-hover">
           View Our Work
         </button>
         <a href="https://wa.me/917206881600" target="_blank" rel="noreferrer" className="inline-block text-center bg-[var(--color-emerald)] border-2 border-[var(--color-gold)] text-[var(--color-gold)] px-8 py-4 rounded font-bold uppercase tracking-widest hover:bg-[#135A46] transition-colors glow-hover shadow-lg">
